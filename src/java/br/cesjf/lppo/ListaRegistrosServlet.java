@@ -1,3 +1,5 @@
+package br.cesjf.lppo;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -52,7 +54,7 @@ public class ListaRegistrosServlet extends HttpServlet {
                 Class.forName("org.apache.derby.jdbc.ClientDriver");
                     out.print("<p>Driver encontrado.<p>");
                     
-                     String url ="jdbc:derby://localhost:1527/lpto-2017-1";
+                     String url ="jdbc:derby://localhost:1527/lppo-2017-1";
                        Connection conexao = DriverManager.getConnection(url, "usuario" , "senha");
                             out.println("Conexao aberta com sucesso!");
                             
